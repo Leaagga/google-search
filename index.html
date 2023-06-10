@@ -29,30 +29,46 @@ tbm=isch
 #The CSS you write should resemble Google’s own aesthetics.
 """" -->
     <head>
-        <title>Search</title>
+        <title>Google Search</title>
+        <style>
+            form{
+                text-align:center;
+                
+            }
+            input{
+                border: 2px solid blue;
+                border-radius: 5px;}
+            div.link{
+                text-align:right
+            }
+            .flex-container{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                height: 300px;
+            }
+        </style>
+
     </head>
     <body>
+        <div class="link">
+        <a href="Googleimagesearch.html">Google Image Search</a>
+        <a href="googleadvancedsearch.html">Google Advacned Search</a>
+        </div>
+        <div class="flex-container">
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input type="text" id="search_bar" name="q">
+            <br>
+            <input type="submit" id="search_button" value="Google Search">
         </form>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Google Image Search" >
-            
-        </form>
+        
         <form action="https://google.com/search?q=%s&btnI=Im+Feeling+Lucky">
             
             <input type="submit" value="I'm Feeling Lucky">
         </form>
         
-        <form action="https://google.com/search">
-            <input type="all these words" name="as_q">
-            <input type="this exact word or phrase"  name="as_epq">
-            <input type="any of these words"  name="as_oq">
-            <input type="none of these words"  name="as_eq">
-            <input type="submit" value="Advanced Search">
-        </form>
+        
+        </div>
     </body>
 </html>
