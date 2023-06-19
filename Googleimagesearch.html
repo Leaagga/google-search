@@ -2,25 +2,7 @@
 <html lang="en">
     <head>
         <title>Google Image Search</title>
-        <style>
-            form{
-                text-align:center;
-                
-            }
-            input{
-                border: 2px solid blue;
-                border-radius: 5px;}
-            div.link{
-                text-align:right
-            }
-            .flex-container{
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                
-                
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
 
     </head>
     <body>
@@ -30,10 +12,10 @@
         <div class="flex-container">
         
         <form action="https://google.com/search">
-            <input type="text" id="search_bar" name="q">
+            <input type="text" class="search_bar" name="q">
             <br>
             <input type="hidden" name="tbm" value="isch">
-            <input type="submit" id="search_button" value="Google Image Search" >
+            <input type="submit" class="search_button" value="Google Image Search" >
             
         </form>
         </div>

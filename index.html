@@ -3,44 +3,24 @@
 
     <head>
         <title>Google Search</title>
-        <style>
-            form{
-                text-align:center;
-                
-            }
-            input{
-                border: 2px solid blue;
-                border-radius: 5px;}
-            div.link{
-                text-align:right
-            }
-            .flex-container{
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                display: flex;
-                height: 300px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
 
+       
     </head>
     <body>
         <div class="link">
         <a href="Googleimagesearch.html">Google Image Search</a>
         <a href="googleadvancedsearch.html">Google Advacned Search</a>
         </div>
-        <div class="flex-container">
+        <div class="flex-container2">
         <form action="https://google.com/search">
-            <input type="text" id="search_bar" name="q">
+            <input type="text" class="search_bar" name="q" 
+             size="40">
             <br>
-            <input type="submit" id="search_button" value="Google Search">
-        </form>
-        
-        <form action="https://google.com/search?q=%s&btnI=Im+Feeling+Lucky">
+            <input type="submit" class="search_button" value="Google Search">
+            <input type="submit" class="search_button" name="btnI" value="I'm Feeling Lucky">
             
-            <input type="submit" value="I'm Feeling Lucky">
         </form>
-        
         
         </div>
     </body>

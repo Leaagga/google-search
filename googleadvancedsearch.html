@@ -3,50 +3,31 @@
 
     <head>
         <title>Google Advacned Search</title>
-        <style>
-            form{
-                text-align:center;
-                
-            }
-            input{
-                border: 2px solid blue;
-                border-radius: 5px;}
-            div.link{
-                text-align:right
-            }
-            .flex-container{
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                
-                
-            }
-
-           
-        </style>
+        <link rel="stylesheet" href="style.css">
+        
 
     </head>
-    <body>
+    <body >
         <div class="link">
         <a href="index.html">back to Google Search</a>
         </div>
     
         
-        <div class="flex-container">
-        <form action="https://google.com/search">
-            All these words:
-            <input type="all these words" id="search_bar" name="as_q">
-            <br>
-            This exact word or phrase:
-            <input type="this exact word or phrase" id="search_bar"  name="as_epq">
-            <br>
-            Any of these words:
-            <input type="any of these words" id="search_bar"  name="as_oq">
-            <br>
-            None of these words:
-            <input type="none of these words" id="search_bar"  name="as_eq">
-            <br>
-            <input type="submit" id="search_button" value="Advanced Search">
+        <div >
+        <form action="https://google.com/search" class="flex-container2">
+            <div class="advanced_search_option">All these words:</div>
+            <div class="advanced_searchbar_padding"><input type="all these words" class="advanced_search_bar" name="as_q"></div>
+            
+            <div class="advanced_search_option">This exact word or phrase:</div>
+            <div class="advanced_searchbar_padding"><input type="this exact word or phrase" class="advanced_search_bar"  name="as_epq"></div>
+            
+            <div class="advanced_search_option">Any of these words:</div>
+            <div class="advanced_searchbar_padding"><input type="any of these words" class="advanced_search_bar"  name="as_oq"></div>
+            
+            <div class="advanced_search_option">None of these words:</div>
+            <div class="advanced_searchbar_padding"><input type="none of these words" class="advanced_search_bar"  name="as_eq"></div>
+            
+            <div class="advanced_searchbar_padding"><input type="submit" class="advanced_search_button" value="Advanced Search"></div>
         </form>
         </div>
     </body>
